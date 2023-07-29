@@ -1,17 +1,13 @@
 # atom-solidity-syntax
+
 Solidity syntax support for Atom
 
-Installation:
-  1. Copy all files to your atom data folder (default: C:\Users\<user>\.atom)
-  2. Restart Atom editor
+## Installation
+1. Copy all files to your Atom data folder (default: C:\Users\<user>\.atom)
+2. Restart Atom editor
 
+**Note**: Should work with any UI theme (tested: Dark One and Dracula). If I missed any new Solidity syntax, feel free to commit or PM me.
 
-note:
-  Should work with any UI theme (tested: Dark One and Dracula). Hope I did add all new solidity syntax- if so feel free to commit / pm me.
-
-
-
-credit:
-
-colors by: @dizzyup - https://github.com/dizzyup/hypest-dark-syntax
-original solidity syntax package by: @jesseweed - https://github.com/jesseweed/language-solidity
+## Credit
+- Colors by: @dizzyup - [https://github.com/dizzyup/hypest-dark-syntax](https://github.com/dizzyup/hypest-dark-syntax)
+- Original Solidity syntax package by: @jesseweed - [https://github.com/jesseweed/language-solidity](https://github.com/jesseweed/language-solidity)
