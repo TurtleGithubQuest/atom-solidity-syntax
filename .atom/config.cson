@@ -1,0 +1,16 @@
+"*":
+  core:
+    customFileTypes:
+      "source.solidity": [
+        "sol"
+      ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 13
+    invisibles:
+      space: "␡"
+    multiCursorOnClick: false
+    showInvisibles: true
+  welcome:
+    showOnStartup: false
+    showSunsettingOnStartup: false

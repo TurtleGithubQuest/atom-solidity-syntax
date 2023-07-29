@@ -1,0 +1,64 @@
+@grey: #66717D;
+
+@blue: lighten(#2390FF, 5%);
+@green: #7CC048;
+@orange: #F59A2D;
+@red: lighten(#F25112, 5%);
+
+@cyan: lighten(#23BCFF, 5%);
+@purple: lighten(#AE59D8, 5%);
+@turquoise: #29BBB0;
+
+.syntax--solidity {
+	.syntax--comment {
+	  color: darken(@green, 20%);
+	}
+	.syntax--keyword {
+	  color: @green;
+	}
+	.syntax--danger {
+	  color: @red;
+	}
+	.syntax--storage {
+	  color: @orange;
+	}
+	.syntax--constant {
+	  color: @blue;
+	}
+	.syntax--variable {
+	  color: @purple;
+	}
+	.syntax--string {
+	  color: @purple;
+	}
+	.syntax--entity {
+	  color: @blue;
+	}
+	.syntax--bytes {
+	  color: darken(@cyan, 5%);
+	}
+	.syntax--quoted {
+	  color: darken(@orange, 15%);
+	}
+	.syntax--light-green {
+	  color: darken(@turquoise, 3%);
+	}
+	.syntax--dark-blue {
+	  color: darken(@blue, 5%);
+	}
+	.syntax--dark-yellow {
+	  color: lighten(@orange, 25%);
+	}
+	.syntax--dark-green {
+	  color: darken(@green, 10%);
+	}
+	.syntax--grey {
+	  color: lighten(@grey, 3%);
+	}
+	.syntax--light-purple {
+	  color: lighten(@purple, 3%);
+	}
+	.syntax--parameter {
+	  color: lighten(@grey, 15%);
+	}
+}

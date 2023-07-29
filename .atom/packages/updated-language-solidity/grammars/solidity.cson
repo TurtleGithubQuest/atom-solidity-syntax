@@ -21,7 +21,7 @@
       {
         captures:
           "1":
-            name: "keyword.control"
+            name: "constant.language"
         match: "\\b(contract|library|using|struct|function|modifier)\\b"
       }
       {
@@ -67,9 +67,43 @@
     name: "constant.language"
   }
   {
-    comment: "Language keywords"
-    match: "\\b(var|import|function|constant|if|else|for|while|do|break|continue|returns?|private|public|internal|external|inherited|this|suicide|new|is|throw|\\_)\\b"
-    name: "keyword.control"
+    comment: "Bytes calldata and memory"
+    match: "\\b(calldata|memory)\\b"
+    name: "storage.modifier"
+  }
+  {
+    match: "\\b(returns?|\\_)\\b"
+    name: "dark-green"
+  }
+  {
+    match: "\\b(private|public|view|internal|payable|external|\\_)\\b"
+    name: "light-green"
+  }
+  {
+    match: "\\b(this|super|\\_)\\b"
+    name: "dark-blue"
+  }
+  {
+    match: "\\b(if|else|\\_)\\b"
+    name: "dark-yellow"
+  }
+  {
+    match: "\\b(override|\\_)\\b"
+    name: "grey"
+  }
+  {
+    match: "\\b(constructor|\\_)\\b"
+    name: "light-purple"
+  }
+  {
+    comment: "Danger keywords"
+    match: "\\b(for|while|delete|for|break|continue|throw|do|break|\\_)\\b"
+    name: "danger"
+  }
+  {
+    comment: "Bytes keyword"
+    match: "\\b(bytes\\d*|\\_)\\b"
+    name: "bytes"
   }
   {
     captures:
@@ -104,7 +138,7 @@
   {
     comment: "Strings"
     match: "([\\\"\\'].*?[\\\"\\'])"
-    name: "string.quoted"
+    name: "quoted"
   }
   {
     comment: "Numbers"
@@ -134,6 +168,6 @@
       "1":
         name: "constant.language"
       "2":
-        name: "variable.parameter"
+        name: "none"
     comment: "Built-in types"
-    match: "\\b(address|string\\d*|bytes\\d*|int\\d*|uint\\d*|bool|hash\\d*)\\b(?:\\s+(?:indexed\\s+)?([A-Za-z_][A-Za-z0-9_]*)\\s*[,\\)])?"
+    match: "\\b(address|string\\d*|int\\d*|uint\\d*|var|import|constant|inherited|is|bool|new|function|suicide|hash\\d*)\\b(?:\\s+(?:indexed\\s+)?([A-Za-z_][A-Za-z0-9_]*)\\s*[,\\)])?"
