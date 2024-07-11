@@ -92,17 +92,17 @@
     name: "grey"
   }
   {
-    match: "\\b(constructor|\\_)\\b"
+    match: "\\b(constructor|receive|fallback|\\_)\\b"
     name: "light-purple"
   }
   {
     comment: "Danger keywords"
-    match: "\\b(for|while|delete|for|break|continue|throw|do|break|\\_)\\b"
+    match: "\\b(for|while|delete|for|break|continue|throw|do|break|selfdestruct|\\_)\\b"
     name: "danger"
   }
   {
     comment: "Bytes keyword"
-    match: "\\b(bytes\\d*|\\_)\\b"
+    match: "\\b(abi|bytes\\d*|\\_)\\b"
     name: "bytes"
   }
   {
@@ -122,7 +122,7 @@
   {
     captures:
       "1":
-        name: "constant.language"
+        name: "bytes"
       "2":
         name: "constant.language"
     comment: "msg and block special usage"
@@ -143,12 +143,12 @@
   {
     comment: "Numbers"
     match: "\\b(\\d+)\\b"
-    name: "constant.numeric"
+    name: "numeric"
   }
   {
     comment: "Hexadecimal"
     match: "\\b(0[xX][a-fA-F0-9]+)\\b"
-    name: "constant.numeric"
+    name: "hexadecimal"
   }
   {
     comment: "Comments"

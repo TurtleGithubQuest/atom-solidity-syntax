@@ -1,3 +1,5 @@
+.syntax--solidity {
+
 @grey: #66717D;
 
 @blue: lighten(#2390FF, 5%);
@@ -8,10 +10,18 @@
 @cyan: lighten(#23BCFF, 5%);
 @purple: lighten(#AE59D8, 5%);
 @turquoise: #29BBB0;
+@light-green: #6bce9b;
+@dark-orange: #ce9178;
+@teal: #5cb497;
 
-.syntax--solidity {
 	.syntax--comment {
 	  color: darken(@green, 20%);
+	}
+	.syntax--hexadecimal {
+	  color: @teal;
+	}
+	.syntax--numeric {
+	  color: lighten(@teal, 15%);
 	}
 	.syntax--keyword {
 	  color: @green;
@@ -38,13 +48,13 @@
 	  color: darken(@cyan, 5%);
 	}
 	.syntax--quoted {
-	  color: darken(@orange, 15%);
+	  color: @dark-orange;
 	}
 	.syntax--light-green {
-	  color: darken(@turquoise, 3%);
+	  color: @light-green;
 	}
 	.syntax--dark-blue {
-	  color: darken(@blue, 5%);
+	  color: darken(@blue, 10%);
 	}
 	.syntax--dark-yellow {
 	  color: lighten(@orange, 25%);
@@ -56,7 +66,7 @@
 	  color: lighten(@grey, 3%);
 	}
 	.syntax--light-purple {
-	  color: lighten(@purple, 3%);
+	  color: #f38abb;
 	}
 	.syntax--parameter {
 	  color: lighten(@grey, 15%);
